@@ -1,0 +1,27 @@
+body{
+    background: rgb(172, 172, 172);
+}
+
+.main{
+    width: 500px;
+    min-height: 500px;
+    border: solid 1px #eee;
+    text-align: center;
+    
+    padding : 20px;
+    margin: 20px auto;
+}
+.title{
+    font-size: 30px;
+}
+.div{
+    width: 400px;
+    height: 300px;
+    border : solid 1px rgb(230, 47, 47);
+    margin: inherit;
+    padding : inherit;
+    background-color: #fff;
+}
+.input,.push{
+    padding: 10px;
+}
