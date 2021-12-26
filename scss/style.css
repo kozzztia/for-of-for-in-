@@ -6,10 +6,13 @@ body{
     width: 500px;
     min-height: 500px;
     border: solid 1px #eee;
+    border-radius: 3px;
     text-align: center;
     
     padding : 20px;
     margin: 20px auto;
+
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
 }
 .title{
     font-size: 30px;
@@ -17,10 +20,11 @@ body{
 .div{
     width: 400px;
     height: 300px;
-    border : solid 1px rgb(230, 47, 47);
+    box-shadow:inset 1px 1px 20px rgba(0, 0, 9 , 0.9);
     margin: inherit;
     padding : inherit;
-    background-color: #fff;
+    background-color: rgb(121, 241, 235);
+    text-align: center;
 }
 .input,.push{
     padding: 10px;
