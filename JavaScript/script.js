@@ -139,17 +139,38 @@ let p = document.querySelector('.p')
 // }
 
 // ---------------------------------------task 7
-let simpleArray = [
-  id = [23, 45, 29],
-  firstName = ['ivan', 'Petr', 'Kostian']
-]
+// let simpleArray = [
+//   id = [23, 45, 29],
+//   firstName = ['ivan', 'Petr', 'Kostian']
+// ]
+
+// push.onclick = function () {
+
+//   let obj = new Object();
+//   for (let i = 0; i < id.length; i++) {
+//     obj[id[i]] = firstName[i];
+//   }
+//   console.log(obj);
+// }
+// --------------------------------------task 8
+
+let array = [
+  num = { num1: 1, num2: 2, num3: 3 },
+  num1 = { num11: 1, num12: 2, num13: 3 },
+  num1 = { num21: 1, num22: 2, num23: 3 }
+
+];
+
 
 push.onclick = function () {
+  let newArr = [];
 
-  let obj = new Object();
-  for (let i = 0; i < id.length; i++) {
-    obj[id[i]] = firstName[i];
+  for (let i = 0; i < array.length; i++) {
+    console.log(Object.values(array[i]))
+    console.log(array[i])
   }
-  console.log(obj);
-}
+  newArr = [...Object.values(array[0]), ...Object.values(array[1]), ...Object.values(array[2])]
+  console.log(newArr)
 
+
+}
