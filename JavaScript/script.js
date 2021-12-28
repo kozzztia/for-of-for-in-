@@ -25,33 +25,59 @@ let p = document.querySelector('.p')
 //   console.log(obj);
 // };
 
-push.onclick = function () {
-  let text = input.value;
-  console.log(text);
-  // ---------------------------------find text
-  let textArr = [];
-  for (let i = 0; i < text.length; i++) {
-    textArr.push(text.charAt(i));
-  }
-  console.log(textArr);
-  // ----------------------- create new array
-  let textSet = new Set(textArr);
-  console.log(textSet);
-  // ------------------------create set
-  let textObj = {}
-  // ----------------------create object
+// push.onclick = function () {
+//   let text = input.value;
+//   console.log(text);
+//   // ---------------------------------find text
+//   let textArr = [];
+//   for (let i = 0; i < text.length; i++) {
+//     textArr.push(text.charAt(i));
+//   }
+//   console.log(textArr);
+//   // ----------------------- create new array
+//   let textSet = new Set(textArr);
+//   console.log(textSet);
+//   // ------------------------create set
+//   let textObj = {}
+//   // ----------------------create object
 
-  for (let key of textSet) {
-    count = 0;
-    // -----------------------create count of elements
-    for (let i = 0; i < textArr.length; i++) {
-      if (textArr[i] === key) {
-        //  if word of array === word in set
-        count++;
-      }
-    }
-    textObj[key] = count;
+//   for (let key of textSet) {
+//     count = 0;
+//     // -----------------------create count of elements
+//     for (let i = 0; i < textArr.length; i++) {
+//       if (textArr[i] === key) {
+//         //  if word of array === word in set
+//         count++;
+//       }
+//     }
+//     textObj[key] = count;
+//   }
+//   console.log(textObj);
+// }
+
+// -----------------------------------------test
+
+
+let arr = [...input.value];
+// // -все
+// // for (let i = 0; i < arr.length; i++) {
+// //   console.log(arr[i])
+// // }
+// // индекс -ключь
+// // for (let key in arr) {
+// //   console.log(key)
+// // }
+// // значение обдж
+// for (let item of arr) {
+//   console.log(item)
+// }
+
+
+// ----------------------------------------task 1
+push.onclick = (i) => {
+  let text = []
+  for (i = 0; i < arr.length; i++) {
+    text += `${arr[i]} `;
   }
-  console.log(textObj);
+  div.textContent = text;
 }
-
