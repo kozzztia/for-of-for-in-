@@ -55,10 +55,10 @@ let p = document.querySelector('.p')
 //   console.log(textObj);
 // }
 
-// -----------------------------------------test
+// -----------------------------------------test 
 
 
-let arr = [...input.value];
+let arr = [...input.value.split(' ')];
 // // -все
 // // for (let i = 0; i < arr.length; i++) {
 // //   console.log(arr[i])
@@ -74,10 +74,20 @@ let arr = [...input.value];
 
 
 // ----------------------------------------task 1
-push.onclick = (i) => {
-  let text = []
+// push.onclick = (i) => {
+//   let text = []
+//   for (i = 0; i < arr.length; i++) {
+//     text += `${arr[i]} `;
+//   }
+//   div.textContent = text;
+// }
+
+// ----------------------------------------task2
+
+push.addEventListener('click', (i) => {
+  let text = [];
   for (i = 0; i < arr.length; i++) {
-    text += `${arr[i]} `;
+    text += `${[i]}: ${arr[i]} ,`
   }
-  div.textContent = text;
-}
+  div.innerHTML = text;
+})
