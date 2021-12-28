@@ -55,7 +55,7 @@ let p = document.querySelector('.p')
 //   console.log(textObj);
 // }
 
-// -----------------------------------------test 
+// -----------------------------------------test
 
 
 // let arr = [...input.value.split(' ')];
@@ -95,11 +95,39 @@ let p = document.querySelector('.p')
 //   div.innerHTML = text;
 // })
 
-// 
-let divs = document.getElementsByClassName('div');
+// -------------------------------------------task 3
+
+// let divs = document.getElementsByClassName('div');
+// push.onclick = function () {
+//   for (let key of divs) {
+//     key.innerHTML = input.value;
+//   }
+//   console.log('"' + input.value + '" in all divs elements as innerHTML')
+// }
+
+// -----------------------------------------task 4
+
+// let divs = document.querySelectorAll('.div');
+
+// push.addEventListener('click', function () {
+//   let text = input.value;
+//   for (let i = 0; i < divs.length; i++) {
+//     divs[i].innerHTML = text;
+//   }
+// })
+
+// ---------------------------------------- task 5
+
+let arr = [2, 5, 3, 8, 4, 7, 11, 9, 0, 2, 11, 3, 4];
+
 push.onclick = function () {
-  for (let key of divs) {
-    key.innerHTML = input.value;
+  let num = +input.value;
+  let newArr = [];
+  for (let item of arr) {
+    if (item >= num) {
+      newArr.push(item);
+    }
   }
-  console.log(input.value)
+  console.log(newArr)
+
 }
