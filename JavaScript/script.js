@@ -118,7 +118,7 @@ let p = document.querySelector('.p')
 
 // ---------------------------------------- task 5
 
-let arr = [2, 5, 3, 8, 4, 7, 11, 9, 0, 2, 11, 3, 4];
+// let arr = [2, 5, 3, 8, 4, 7, 11, 9, 0, 2, 11, 3, 4];
 
 // push.onclick = function () {
 //   let num = +input.value;
@@ -134,6 +134,22 @@ let arr = [2, 5, 3, 8, 4, 7, 11, 9, 0, 2, 11, 3, 4];
 // }
 // -----------------------------------------task 6
 
+// push.onclick = function () {
+//   div.innerHTML = [...arr]
+// }
+
+// ---------------------------------------task 7
+let simpleArray = [
+  id = [23, 45, 29],
+  firstName = ['ivan', 'Petr', 'Kostian']
+]
+
 push.onclick = function () {
-  div.innerHTML = [...arr]
+
+  let obj = new Object();
+  for (let i = 0; i < id.length; i++) {
+    obj[id[i]] = firstName[i];
+  }
+  console.log(obj);
 }
+
