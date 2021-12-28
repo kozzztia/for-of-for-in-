@@ -120,14 +120,20 @@ let p = document.querySelector('.p')
 
 let arr = [2, 5, 3, 8, 4, 7, 11, 9, 0, 2, 11, 3, 4];
 
-push.onclick = function () {
-  let num = +input.value;
-  let newArr = [];
-  for (let item of arr) {
-    if (item >= num) {
-      newArr.push(item);
-    }
-  }
-  console.log(newArr)
+// push.onclick = function () {
+//   let num = +input.value;
+//   let newArr = [];
+//   for (let item of arr) {
+//     if (item >= num) {
+//       newArr.push(item);
+//     }
+//   }
+//   arr = newArr;
+//   console.log(arr);
+//   return arr;
+// }
+// -----------------------------------------task 6
 
+push.onclick = function () {
+  div.innerHTML = [...arr]
 }
