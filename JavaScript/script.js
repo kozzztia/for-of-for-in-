@@ -58,7 +58,10 @@ let p = document.querySelector('.p')
 // -----------------------------------------test 
 
 
-let arr = [...input.value.split(' ')];
+// let arr = [...input.value.split(' ')];
+
+
+
 // // -все
 // // for (let i = 0; i < arr.length; i++) {
 // //   console.log(arr[i])
@@ -84,10 +87,19 @@ let arr = [...input.value.split(' ')];
 
 // ----------------------------------------task2
 
-push.addEventListener('click', (i) => {
-  let text = [];
-  for (i = 0; i < arr.length; i++) {
-    text += `${[i]}: ${arr[i]} ,`
+// push.addEventListener('click', (i) => {
+//   let text = [];
+//   for (i = 0; i < arr.length; i++) {
+//     text += `${[i]}: ${arr[i]} ${arr[i].length} <br>`;
+//   }
+//   div.innerHTML = text;
+// })
+
+// 
+let divs = document.getElementsByClassName('div');
+push.onclick = function () {
+  for (let key of divs) {
+    key.innerHTML = input.value;
   }
-  div.innerHTML = text;
-})
+  console.log(input.value)
+}
