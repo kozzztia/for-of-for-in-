@@ -194,12 +194,41 @@ let p = document.querySelector('.p')
 
 // ------------------------------------task 10
 
-let arr = [4, 6, 9, 'hello', 'go', 1]
+// let arr = [4, 6, 9, 'hello', 'go', 1]
+
+// push.onclick = function () {
+//   let obj = {}
+//   for (let i = 0; i < arr.length; i++) {
+//     obj[arr[i]] = (arr[i]);
+//   }
+//   console.log(obj)
+// }
+
+
+// ---------------------------------task 11
+
+let obj = {
+  'one': 1,
+  'two': 2,
+  'three': 3,
+  'four': 4,
+  'five': 5,
+  'six': 6,
+  'seven': 7,
+  'eight': 8,
+  'nine': 9,
+  'ten': 10
+}
 
 push.onclick = function () {
-  let obj = {}
-  for (let i = 0; i < arr.length; i++) {
-    obj[arr[i]] = (arr[i]);
+  let newObj = {};
+  let text = "";
+  for (let iteam in obj) {
+    console.log(obj[iteam]);
+    if (obj[iteam] < +input.value) {
+      newObj[iteam] = obj[iteam];
+      text += `${newObj[iteam]} = ${iteam} <br>`
+    }
   }
-  console.log(obj)
+  div.innerHTML = text;
 }
