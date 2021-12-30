@@ -1,7 +1,7 @@
 let push = document.querySelector('.push')
 let div = document.querySelector('.div')
 let input = document.querySelector('.input')
-let p = document.querySelector('.p')
+// let p = document.querySelector('.p')
 
 
 // push.onclick = () => {
@@ -235,10 +235,43 @@ let obj = {
 
 // -------------------------------------task12
 
-push.onclick = function () {
-  let text = "";
-  for (let iteam of Object.keys(obj)) {
-    text += obj[iteam] + ':' + iteam + ", ";
-  }
-  div.innerHTML = text;
-}
+// push.onclick = function () {
+//   let text = "";
+//   for (let iteam of Object.keys(obj)) {
+//     text += obj[iteam] + ':' + iteam + ", ";
+//   }
+//   div.innerHTML = text;
+// }
+
+// ----------------------------------task 13
+
+// push.onclick = function () {
+
+//   let text = "";
+//   for (let key of Object.keys(obj)) {
+//     text += obj[key] + " ";
+//   }
+//   div.innerHTML = text;
+// }
+
+// -----------------------------------task 14
+
+// push.onclick = function () {
+//   let text = "";
+//   for (let key of Object.keys(obj)) {
+//     text += key + "=" + obj[key] + " ";
+//   }
+//   div.innerHTML = text;
+// }
+
+// ----------------------------------task 15
+
+
+
+// onclick = function () {
+//   let p = document.querySelectorAll('.p')
+//   let text = input.value;
+//   for (let iteam of p) {
+//     iteam.innerHTML = text;
+//   }
+// }
