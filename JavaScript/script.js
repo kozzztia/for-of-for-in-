@@ -220,15 +220,25 @@ let obj = {
   'ten': 10
 }
 
+// push.onclick = function () {
+//   let newObj = {};
+//   let text = "";
+//   for (let iteam in obj) {
+//     console.log(obj[iteam]);
+//     if (obj[iteam] < +input.value) {
+//       newObj[iteam] = obj[iteam];
+//       text += `${newObj[iteam]} = ${iteam} <br>`
+//     }
+//   }
+//   div.innerHTML = text;
+// }
+
+// -------------------------------------task12
+
 push.onclick = function () {
-  let newObj = {};
   let text = "";
-  for (let iteam in obj) {
-    console.log(obj[iteam]);
-    if (obj[iteam] < +input.value) {
-      newObj[iteam] = obj[iteam];
-      text += `${newObj[iteam]} = ${iteam} <br>`
-    }
+  for (let iteam of Object.keys(obj)) {
+    text += obj[iteam] + ':' + iteam + ", ";
   }
   div.innerHTML = text;
 }
