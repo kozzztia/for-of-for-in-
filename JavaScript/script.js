@@ -173,26 +173,33 @@ let p = document.querySelector('.p')
 
 // ------------------------------------task9
 
-let arr = [
+// let arr = [
+//   ['w', 'e', 'r', 't'],
+//   ['w', 'y', 'u', 'i', 'o'],
+//   ['w', 'e', 'r', 't', 'u', 'i', 'o'],
+//   ['w', 'e', 'r', 't', 'y', 'o'],
+//   ['w', 'e', 'r', 't', 'y', 'u', 'i', 'o'],
+//   ['w', 'e', 'r', 't', 'y', 'u', 'o'],
+//   [0, 0, 0, 0, 0, 0, 0]
+// ];
+// push.onclick = function () {
+//   let num = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i].length > num) {
+//       num = arr[i].length
+//     }
+//   }
+//   console.log(num);
+// }
 
-  ['w', 'e', 'r', 't'],
-  ['w', 'y', 'u', 'i', 'o'],
-  ['w', 'e', 'r', 't', 'u', 'i', 'o'],
-  ['w', 'e', 'r', 't', 'y', 'o'],
-  ['w', 'e', 'r', 't', 'y', 'u', 'i', 'o'],
-  ['w', 'e', 'r', 't', 'y', 'u', 'o'],
-  [0, 0, 0, 0, 0, 0, 0]
+// ------------------------------------task 10
 
-
-];
-
+let arr = [4, 6, 9, 'hello', 'go', 1]
 
 push.onclick = function () {
-  let num = 0;
+  let obj = {}
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i].length > num) {
-      num = arr[i].length
-    }
+    obj[arr[i]] = (arr[i]);
   }
-  console.log(num);
+  console.log(obj)
 }
