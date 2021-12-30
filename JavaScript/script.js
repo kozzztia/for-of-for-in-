@@ -154,23 +154,45 @@ let p = document.querySelector('.p')
 // }
 // --------------------------------------task 8
 
-let array = [
-  num = { num1: 1, num2: 2, num3: 3 },
-  num1 = { num11: 1, num12: 2, num13: 3 },
-  num1 = { num21: 1, num22: 2, num23: 3 }
+// let array = [
+//   num = { num1: 1, num2: 2, num3: 3 },
+//   num1 = { num11: 1, num12: 2, num13: 3 },
+//   num1 = { num21: 1, num22: 2, num23: 3 }
+
+// ];
+
+
+// push.onclick = function () {
+//   let newArr = [];
+
+//   for (let i = 0; i < array.length; i++) {
+//     newArr += [...Object.values(array[i])];
+//   }
+//   console.log(newArr)
+// }
+
+// ------------------------------------task9
+
+let arr = [
+
+  ['w', 'e', 'r', 't'],
+  ['w', 'y', 'u', 'i', 'o'],
+  ['w', 'e', 'r', 't', 'u', 'i', 'o'],
+  ['w', 'e', 'r', 't', 'y', 'o'],
+  ['w', 'e', 'r', 't', 'y', 'u', 'i', 'o'],
+  ['w', 'e', 'r', 't', 'y', 'u', 'o'],
+  [0, 0, 0, 0, 0, 0, 0]
+
 
 ];
 
 
 push.onclick = function () {
-  let newArr = [];
-
-  for (let i = 0; i < array.length; i++) {
-    console.log(Object.values(array[i]))
-    console.log(array[i])
+  let num = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length > num) {
+      num = arr[i].length
+    }
   }
-  newArr = [...Object.values(array[0]), ...Object.values(array[1]), ...Object.values(array[2])]
-  console.log(newArr)
-
-
+  console.log(num);
 }
